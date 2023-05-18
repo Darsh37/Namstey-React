@@ -1,0 +1,50 @@
+.shimmer-effect {
+  display: flex;
+ flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.rest-card-shimmer-effect{
+
+  display: flex;
+  padding: 0.2rem;
+  margin: 1rem;
+  width: 17rem;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin: 3rem; 
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  animation: shimmer 1s infinite linear;
+}
+
+.menu-details-shimmer{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 0.7rem;
+  width:15rem;
+  height:12rem;
+  background-color: #f6f7f8;
+  animation: shimmer 1s infinite linear;
+
+}
+
+.shimmer-line {
+  margin: 0.5rem;
+  position: relative;
+  height: 20px;
+  width: 250px;
+  background-color: #f6f7f8;
+  animation: shimmer 1s infinite linear;
+}
+
+/* @keyframes shimmer {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100px);
+  }
+} */
