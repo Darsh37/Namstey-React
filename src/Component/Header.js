@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { Logo_URL } from "../utils/Constants";
+// import Button from 'react-bootstrap/Button';
+import { Button } from 'react-bootstrap';
 
 const Header =()=>{
   const[isLoggedIn,setLoggedIn]= useState(true);
@@ -11,15 +13,17 @@ const Header =()=>{
         </div>
         <div className='Nav-link'>
           <ul>
-            <li>Home</li>
-            <li>About us</li>
-            <li>Contact Us</li>
+            <li href="/">Home</li>
+            <li href="/abouts">About us</li>
+            <li href="/contact">Contact Us</li>
             <li>Cart</li>
           </ul>
         </div>
-        {isLoggedIn? (<button>
+        {isLoggedIn? (<button onClick={()=> setLoggedIn(false)}>
           LoggedIn
-        </button>):(<button>LoggedOut</button>)}
+        </button>):
+        (<Button onClick={()=> setLoggedIn(true)}>
+          LoggedOut</Button>)}
        </div>
     );  
 }

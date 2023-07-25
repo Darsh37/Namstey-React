@@ -1,11 +1,5 @@
-.shimmer-effect {
-  display: flex;
- flex-wrap: wrap;
-  justify-content: space-around;
-}
 
 .rest-card-shimmer-effect{
-
   display: flex;
   padding: 0.2rem;
   margin: 1rem;
